@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Strategic services functions and definitions
  *
@@ -7,7 +8,7 @@
  * @package Strategic_services
  */
 
-if ( ! defined( 'STRATEGIC_SERVICES_VERSION' ) ) {
+if (!defined('STRATEGIC_SERVICES_VERSION')) {
 	/*
 	 * Set the theme’s version number.
 	 *
@@ -15,10 +16,10 @@ if ( ! defined( 'STRATEGIC_SERVICES_VERSION' ) ) {
 	 * to create your production build, the value below will be replaced in the
 	 * generated zip file with a timestamp, converted to base 36.
 	 */
-	define( 'STRATEGIC_SERVICES_VERSION', '0.1.0' );
+	define('STRATEGIC_SERVICES_VERSION', '0.1.0');
 }
 
-if ( ! defined( 'STRATEGIC_SERVICES_TYPOGRAPHY_CLASSES' ) ) {
+if (!defined('STRATEGIC_SERVICES_TYPOGRAPHY_CLASSES')) {
 	/*
 	 * Set Tailwind Typography classes for the front end, block editor and
 	 * classic editor using the constant below.
@@ -42,7 +43,7 @@ if ( ! defined( 'STRATEGIC_SERVICES_TYPOGRAPHY_CLASSES' ) ) {
 	);
 }
 
-if ( ! function_exists( 'strategic_services_setup' ) ) :
+if (!function_exists('strategic_services_setup')) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -50,17 +51,18 @@ if ( ! function_exists( 'strategic_services_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function strategic_services_setup() {
+	function strategic_services_setup()
+	{
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on Strategic services, use a find and replace
 		 * to change 'strategic-services' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'strategic-services', get_template_directory() . '/languages' );
+		load_theme_textdomain('strategic-services', get_template_directory() . '/languages');
 
 		// Add default posts and comments RSS feed links to head.
-		add_theme_support( 'automatic-feed-links' );
+		add_theme_support('automatic-feed-links');
 
 		/*
 		 * Let WordPress manage the document title.
@@ -68,20 +70,20 @@ if ( ! function_exists( 'strategic_services_setup' ) ) :
 		 * hard-coded <title> tag in the document head, and expect WordPress to
 		 * provide it for us.
 		 */
-		add_theme_support( 'title-tag' );
+		add_theme_support('title-tag');
 
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-		add_theme_support( 'post-thumbnails' );
+		add_theme_support('post-thumbnails');
 
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus(
 			array(
-				'menu-1' => __( 'Primary', 'strategic-services' ),
-				'menu-2' => __( 'Footer Menu', 'strategic-services' ),
+				'menu-1' => __('Primary', 'strategic-services'),
+				'menu-2' => __('Footer Menu', 'strategic-services'),
 			)
 		);
 
@@ -103,34 +105,35 @@ if ( ! function_exists( 'strategic_services_setup' ) ) :
 		);
 
 		// Add theme support for selective refresh for widgets.
-		add_theme_support( 'customize-selective-refresh-widgets' );
+		add_theme_support('customize-selective-refresh-widgets');
 
 		// Add support for editor styles.
-		add_theme_support( 'editor-styles' );
+		add_theme_support('editor-styles');
 
 		// Enqueue editor styles.
-		add_editor_style( 'style-editor.css' );
+		add_editor_style('style-editor.css');
 
 		// Add support for responsive embedded content.
-		add_theme_support( 'responsive-embeds' );
+		add_theme_support('responsive-embeds');
 
 		// Remove support for block templates.
-		remove_theme_support( 'block-templates' );
+		remove_theme_support('block-templates');
 	}
 endif;
-add_action( 'after_setup_theme', 'strategic_services_setup' );
+add_action('after_setup_theme', 'strategic_services_setup');
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function strategic_services_widgets_init() {
+function strategic_services_widgets_init()
+{
 	register_sidebar(
 		array(
-			'name'          => __( 'Footer', 'strategic-services' ),
+			'name'          => __('Footer', 'strategic-services'),
 			'id'            => 'sidebar-1',
-			'description'   => __( 'Add widgets here to appear in your footer.', 'strategic-services' ),
+			'description'   => __('Add widgets here to appear in your footer.', 'strategic-services'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -138,25 +141,29 @@ function strategic_services_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'strategic_services_widgets_init' );
+add_action('widgets_init', 'strategic_services_widgets_init');
 
 /**
  * Enqueue scripts and styles.
  */
-function strategic_services_scripts() {
-	wp_enqueue_style( 'strategic-services-style', get_stylesheet_uri(), array(), STRATEGIC_SERVICES_VERSION );
-	wp_enqueue_script( 'strategic-services-script', get_template_directory_uri() . '/js/script.min.js', array(), STRATEGIC_SERVICES_VERSION, true );
+function strategic_services_scripts()
+{
+	wp_enqueue_style('strategic-services-style', get_stylesheet_uri(), array(), STRATEGIC_SERVICES_VERSION);
+	wp_enqueue_script('strategic-services-script', get_template_directory_uri() . '/js/script.min.js', array(), STRATEGIC_SERVICES_VERSION, true);
+	wp_enqueue_script('strategic-services-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', array(), STRATEGIC_SERVICES_VERSION, true);
+	wp_enqueue_script('strategic-services-jq', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js', array(), STRATEGIC_SERVICES_VERSION, true);
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
+	if (is_singular() && comments_open() && get_option('thread_comments')) {
+		wp_enqueue_script('comment-reply');
 	}
 }
-add_action( 'wp_enqueue_scripts', 'strategic_services_scripts' );
+add_action('wp_enqueue_scripts', 'strategic_services_scripts');
 
 /**
  * Enqueue the block editor script.
  */
-function strategic_services_enqueue_block_editor_script() {
+function strategic_services_enqueue_block_editor_script()
+{
 	wp_enqueue_script(
 		'strategic-services-editor',
 		get_template_directory_uri() . '/js/block-editor.min.js',
@@ -168,15 +175,16 @@ function strategic_services_enqueue_block_editor_script() {
 		true
 	);
 }
-add_action( 'enqueue_block_editor_assets', 'strategic_services_enqueue_block_editor_script' );
+add_action('enqueue_block_editor_assets', 'strategic_services_enqueue_block_editor_script');
 
 /**
  * Enqueue the script necessary to support Tailwind Typography in the block
  * editor, using an inline script to create a JavaScript array containing the
  * Tailwind Typography classes from STRATEGIC_SERVICES_TYPOGRAPHY_CLASSES.
  */
-function strategic_services_enqueue_typography_script() {
-	if ( is_admin() ) {
+function strategic_services_enqueue_typography_script()
+{
+	if (is_admin()) {
 		wp_enqueue_script(
 			'strategic-services-typography',
 			get_template_directory_uri() . '/js/tailwind-typography-classes.min.js',
@@ -187,10 +195,10 @@ function strategic_services_enqueue_typography_script() {
 			STRATEGIC_SERVICES_VERSION,
 			true
 		);
-		wp_add_inline_script( 'strategic-services-typography', "tailwindTypographyClasses = '" . esc_attr( STRATEGIC_SERVICES_TYPOGRAPHY_CLASSES ) . "'.split(' ');", 'before' );
+		wp_add_inline_script('strategic-services-typography', "tailwindTypographyClasses = '" . esc_attr(STRATEGIC_SERVICES_TYPOGRAPHY_CLASSES) . "'.split(' ');", 'before');
 	}
 }
-add_action( 'enqueue_block_assets', 'strategic_services_enqueue_typography_script' );
+add_action('enqueue_block_assets', 'strategic_services_enqueue_typography_script');
 
 /**
  * Add the Tailwind Typography classes to TinyMCE.
@@ -198,11 +206,12 @@ add_action( 'enqueue_block_assets', 'strategic_services_enqueue_typography_scrip
  * @param array $settings TinyMCE settings.
  * @return array
  */
-function strategic_services_tinymce_add_class( $settings ) {
+function strategic_services_tinymce_add_class($settings)
+{
 	$settings['body_class'] = STRATEGIC_SERVICES_TYPOGRAPHY_CLASSES;
 	return $settings;
 }
-add_filter( 'tiny_mce_before_init', 'strategic_services_tinymce_add_class' );
+add_filter('tiny_mce_before_init', 'strategic_services_tinymce_add_class');
 
 /**
  * Custom template tags for this theme.
