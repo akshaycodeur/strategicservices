@@ -150,8 +150,9 @@ function strategic_services_scripts()
 {
 	wp_enqueue_style('strategic-services-style', get_stylesheet_uri(), array(), STRATEGIC_SERVICES_VERSION);
 	wp_enqueue_script('strategic-services-script', get_template_directory_uri() . '/js/script.min.js', array(), STRATEGIC_SERVICES_VERSION, true);
-	wp_enqueue_script('strategic-services-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', array(), STRATEGIC_SERVICES_VERSION, true);
+	wp_enqueue_script('strategic-services-lg-script', get_template_directory_uri() . '/js/script.js', array(), STRATEGIC_SERVICES_VERSION, true);
 	wp_enqueue_script('strategic-services-jq', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js', array(), STRATEGIC_SERVICES_VERSION, true);
+	wp_enqueue_script('strategic-services-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', array(), STRATEGIC_SERVICES_VERSION, true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
