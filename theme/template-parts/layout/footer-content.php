@@ -11,12 +11,13 @@
 ?>
 
 
-<footer class="bg-slate-800 dark:bg-gray-900 text-white">
+<footer class="bg-theme-navy dark:bg-gray-900 text-white">
 	<div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
 		<div class="md:flex md:justify-between">
 			<div class="mb-6 md:mb-0">
-				<a href="#" class="flex items-center">
-					<img src="<?php echo get_template_directory_uri() ?>/assets/img/mindsetlogo--white.png" alt="" class="max-h-10 w-auto rounded-none flex place-self-center mx-auto">
+				<a href="#" class="flex flex-col items-start">
+					<img src="<?php echo get_template_directory_uri() ?>/assets/img/mindsetlogo--white.png" alt="" class="max-h-12 w-auto block">
+					<p class="block pt-3 pr-20">We help you put your customers at the center of your leadership, strategy, and operation.</p>
 				</a>
 			</div>
 			<div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
