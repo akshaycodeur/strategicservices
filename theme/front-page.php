@@ -92,49 +92,65 @@
         <p>We Provide tailor-made strategies that enhance your value proposition, diriving growth and revenue in an era of conscious consumerism.</p>
         <p>Our flexible structure allows us to provide solutions completely tailoring the service to your clientele. With your brand at the forefront, our expertise ans services act as a complementary tool for revenue generation and business growth.</p>
     </div>
-    <div class="container mx-auto">
+    <div class="container mx-auto mt-5">
         <div class="max-w-screen-lg mx-auto">
             <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 responsive-grid">
-                <!-- Item 1 -->
-                <div class="bg-white p-4 shadow-md">
-                    <!-- Content for item 1 -->
+
+                <div class="relative bg-white p-4 shadow-md w-full h-64 bg-cover" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/card1.png) ;">
+                    <div class="absolute w-full bottom-0 left-0 py-4 bg-slate-900 bg-opacity-75">
+                        <h4 class="text-white text-xl text-center">Digital Transformation</h4>
+                    </div>
+                    <a href="#" class="absolute w-full h-full left-0 top-0"></a>
                 </div>
 
-                <!-- Item 2 -->
-                <div class="bg-white p-4 shadow-md">
-                    <!-- Content for item 2 -->
+                <div class="relative bg-white p-4 shadow-md w-full h-64 bg-cover" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/card2.webp) ;">
+                    <div class="absolute w-full bottom-0 left-0 py-4 bg-slate-900 bg-opacity-75">
+                        <h4 class="text-white text-xl text-center">Marketing</h4>
+                    </div>
+                    <a href="#" class="absolute w-full h-full left-0 top-0"></a>
                 </div>
 
-                <!-- Item 3 -->
-                <div class="bg-white p-4 shadow-md">
-                    <!-- Content for item 3 -->
+                <div class="relative bg-white p-4 shadow-md w-full h-64 bg-cover" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/card3.png) ;">
+                    <div class="absolute w-full bottom-0 left-0 py-4 bg-slate-900 bg-opacity-75">
+                        <h4 class="text-white text-xl text-center">Sales</h4>
+                    </div>
+                    <a href="#" class="absolute w-full h-full left-0 top-0"></a>
                 </div>
 
-                <!-- Item 4 -->
-                <div class="bg-white p-4 shadow-md">
-                    <!-- Content for item 4 -->
+                <div class="relative bg-white p-4 shadow-md w-full h-64 bg-cover" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/card4.jpg) ;">
+                    <div class="absolute w-full bottom-0 left-0 py-4 bg-slate-900 bg-opacity-75">
+                        <h4 class="text-white text-xl text-center">SME</h4>
+                    </div>
+                    <a href="#" class="absolute w-full h-full left-0 top-0"></a>
                 </div>
 
-                <!-- Item 5 -->
-                <div class="bg-white p-4 shadow-md">
-                    <!-- Content for item 5 -->
+                <div class="relative bg-white p-4 shadow-md w-full h-64 bg-cover" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/card5.jpg) ;">
+                    <div class="absolute w-full bottom-0 left-0 py-4 bg-slate-900 bg-opacity-75">
+                        <h4 class="text-white text-xl text-center">Strategy</h4>
+                    </div>
+                    <a href="#" class="absolute w-full h-full left-0 top-0"></a>
                 </div>
 
-                <!-- Item 6 -->
-                <div class="bg-white p-4 shadow-md">
-                    <!-- Content for item 6 -->
+                <div class="relative bg-white p-4 shadow-md w-full h-64 bg-cover" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/card6.jpg) ;">
+                    <div class="absolute w-full bottom-0 left-0 py-4 bg-slate-900 bg-opacity-75">
+                        <h4 class="text-white text-xl text-center">Training</h4>
+                    </div>
+                    <a href="#" class="absolute w-full h-full left-0 top-0"></a>
                 </div>
 
-                <!-- Item 7 -->
-                <div class="bg-white p-4 shadow-md">
-                    <!-- Content for item 7 -->
+                <div class="relative bg-white p-4 shadow-md w-full h-64 bg-cover" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/card7.webp) ;">
+                    <div class="absolute w-full bottom-0 left-0 py-4 bg-slate-900 bg-opacity-75">
+                        <h4 class="text-white text-xl text-center">Human Resources</h4>
+                    </div>
+                    <a href="#" class="absolute w-full h-full left-0 top-0"></a>
                 </div>
 
-                <!-- Item 8 -->
-                <div class="bg-white p-4 shadow-md">
-                    <!-- Content for item 8 -->
+                <div class="relative bg-white p-4 shadow-md w-full h-64 bg-cover" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/card8.jpg) ;">
+                    <div class="absolute w-full bottom-0 left-0 py-4 bg-slate-900 bg-opacity-75">
+                        <h4 class="text-white text-xl text-center">Live and work in Mauritius</h4>
+                    </div>
+                    <a href="#" class="absolute w-full h-full left-0 top-0"></a>
                 </div>
-
 
             </div>
         </div>
