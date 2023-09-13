@@ -4,10 +4,11 @@
         scroll-behavior: smooth;
     }
 </style>
-<section id="hero" class="relative py-10 md:py-20 flex items-center justify-center h-[70vh] bg-no-repeat bg-cover text-center" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/slide2.png) ;">
-    <div class="centrally p-5">
+<section id="hero" class="relative py-10 md:py-20 flex items-center justify-center h-[70vh] bg-no-repeat bg-cover text-center" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/human.jpg) ;">
+    <div class="centrally py-8 px-5 bg-slate-800 bg-opacity-70">
         <h2 class="block font-bold text-white text-3xl md:text-[2.5rem] leading-[1.2] text-center">SUPPORT - PARTNERSIP - GROWTH</h2>
-        <p class="text-xl font-bold text-white">We help you put your customers at the center of your leadership, strategy, and operation.</p>
+        <p class="text-xl mt-5 text-white">We help you put your customers at the center of your leadership, strategy, and operation.</p>
+        <a href="#contactUs" class="mt-10 w-full sm:w-auto inline-flex justify-center items-center text-center bg-white hover:bg-theme-navy border border-transparent text-base md:text-lg text-theme-navy hover:text-white font-medium focus:ring-2 focus:ring-blue-600   transition py-3 px-5 tracking-wideflex-col">Contact Us </a>
     </div>
 
     <div class="hidden absolute bottom-0 bg-slate-700 p-5 w-full bg-opacity-50" style="background-color: ;">
@@ -15,7 +16,7 @@
             <h2 class="text-2xl mb-5">ARE WE THE RIGHT FIT FOR YOU ?</h2>
             <p class="text-white mb-5">Would you like to arrange a meeting to talk to us about your situation and objectives? During a 30-minute no commitment interview, we will study your particular needs and the best way to achieve the results you are pursuing.</p>
 
-            <a href="#" target="_blank" class="w-full sm:w-auto inline-flex justify-center items-center text-center bg-theme-navy hover:bg-bg-theme-royal border border-transparent text-base md:text-lg text-white font-medium focus:ring-2 focus:ring-blue-600   transition py-3 px-5 tracking-wideflex-col">Contact Us </a>
+            <a href="#" class="w-full sm:w-auto inline-flex justify-center items-center text-center bg-theme-navy hover:bg-bg-theme-royal border border-transparent text-base md:text-lg text-white font-medium focus:ring-2 focus:ring-blue-600   transition py-3 px-5 tracking-wideflex-col">Contact Us </a>
 
         </div>
     </div>
@@ -28,7 +29,7 @@
                 <h2 class="text-2xl mb-5 text-theme-navy">ARE WE THE RIGHT FIT FOR YOU ?</h2>
                 <p class="text-slate-700 mb-5">Would you like to arrange a meeting to talk to us about your situation and objectives? During a 30-minute no commitment interview, we will study your particular needs and the best way to achieve the results you are pursuing.</p>
 
-                <a href="#" target="_blank" class="w-full sm:w-auto inline-flex justify-center items-center text-center bg-theme-navy hover:bg-slate-700 border border-transparent text-base md:text-lg text-white font-medium focus:ring-2 focus:ring-blue-600   transition py-3 px-5 tracking-wideflex-col">Contact Us </a>
+                <a href="#contactUs" class="w-full sm:w-auto inline-flex justify-center items-center text-center bg-theme-navy hover:bg-slate-700 border border-transparent text-base md:text-lg text-white font-medium focus:ring-2 focus:ring-blue-600   transition py-3 px-5 tracking-wideflex-col">Contact Us </a>
 
             </div>
         </div>
@@ -239,6 +240,7 @@
                                     </div>
                                     <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
                                 </form>
+                                <a href="#" class="w-full sm:w-auto inline-flex justify-start items-center text-center bg-theme-navy hover:bg-slate-700 border border-transparent text-base md:text-lg text-white font-medium focus:ring-2 focus:ring-blue-600   transition py-3 px-5 tracking-wideflex-col" style="float: left; margin-top: -2rem;">Submit </a>
                             </div>
                         </div>
                     </div>
