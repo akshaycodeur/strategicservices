@@ -22,34 +22,61 @@
 			</div>
 			<div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
 				<div>
-					<h2 class="mb-6 text-sm font-semibold text-gray-200 uppercase dark:text-white">Userful Links</h2>
-					<ul class="text-gray-400 dark:text-gray-400 font-medium">
-						<li class="mb-2">
-							<a href="" class="hover:underline">Investment Ideas</a>
+					<h2 class="mb-6 text-sm font-semibold text-gray-200 uppercase dark:text-white">Sitemap</h2>
+					<ul class="text-gray-400 dark:text-gray-400 font-medium space-y-1">
+						<li class="">
+							<a href="" class="hover:underline">Home</a>
 						</li>
-						<li class="mb-2">
-							<a href="#" class="hover:underline">Banking Opportunities</a>
+						<li class="">
+							<a href="#" class="hover:underline">About</a>
 						</li>
-						<li class="mb-2">
-							<a href="#" class="hover:underline">Career Path</a>
+						<li class="">
+							<a href="#" class="hover:underline">Solutions</a>
+						</li>
+						<li class="">
+							<a href="#" class="hover:underline">News</a>
+						</li>
+						<li class="">
+							<a href="#" class="hover:underline">Careers</a>
+						</li>
+						<li class="">
+							<a href="#" class="hover:underline">Contact</a>
+						</li>
+						<li class="">
+							<a href="#" class="hover:underline">Book a meeting</a>
 						</li>
 					</ul>
 				</div>
 				<div>
-					<h2 class="mb-6 text-sm font-semibold text-gray-200 uppercase dark:text-white">Follow us</h2>
+					<h2 class="mb-6 text-sm font-semibold text-gray-200 uppercase dark:text-white">Solutions</h2>
 					<ul class="text-gray-400 dark:text-gray-400 font-medium">
-						<li class="mb-2">
-							<a href="#" class="hover:underline ">LinkedIn</a>
+						<li class="">
+							<a href="#" class="hover:underline ">Marketing</a>
 						</li>
-						<li class="mb-2">
-							<a href="#" class="hover:underline">Portfolio</a>
+						<li class="">
+							<a href="#" class="hover:underline">Sales</a>
+						</li>
+						<li class="">
+							<a href="#" class="hover:underline">Digital Transformation</a>
+						</li>
+						<li class="">
+							<a href="#" class="hover:underline">SME</a>
+						</li>
+						<li class="">
+							<a href="#" class="hover:underline">Training</a>
+						</li>
+						<li class="">
+							<a href="#" class="hover:underline">Live & Work in Mauritius</a>
+						</li>
+						<li class="">
+							<a href="#" class="hover:underline">Human Resources</a>
 						</li>
 					</ul>
 				</div>
 				<div>
-					<h2 class="mb-6 text-sm font-semibold text-gray-200 uppercase dark:text-white">Legal</h2>
+					<h2 class="mb-6 text-sm font-semibold text-gray-200 uppercase dark:text-white">Useful Links</h2>
 					<ul class="text-gray-400 dark:text-gray-400 font-medium">
-						<li class="mb-2">
+						<li class="">
 							<a href="#" class="hover:underline">Privacy Policy</a>
 						</li>
 						<li>
@@ -61,7 +88,7 @@
 		</div>
 		<hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
 		<div class="sm:flex sm:items-center sm:justify-between">
-			<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Strategic Services™</a>. All Rights Reserved.
+			<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="" class="hover:underline">Strategic Services™</a>. All Rights Reserved.
 			</span>
 			<div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
 				<a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">

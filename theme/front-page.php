@@ -6,7 +6,7 @@
         <p class="text-xl font-bold text-white">We help you put your customers at the center of your leadership, strategy, and operation.</p>
     </div>
 
-    <div class="absolute bottom-0 bg-slate-700 p-5 w-full bg-opacity-50" style="background-color: ;">
+    <div class="hidden absolute bottom-0 bg-slate-700 p-5 w-full bg-opacity-50" style="background-color: ;">
         <div class="text-white max-w-2xl mx-auto">
             <h2 class="text-2xl mb-5">ARE WE THE RIGHT FIT FOR YOU ?</h2>
             <p class="text-white mb-5">Would you like to arrange a meeting to talk to us about your situation and objectives? During a 30-minute no commitment interview, we will study your particular needs and the best way to achieve the results you are pursuing.</p>
@@ -17,8 +17,22 @@
     </div>
 </section>
 
-<section id="helpClients" class="relative bg-theme-navy overflow-hidden pt-10 md:pt-0">
+<section class="py-12 md:py-16" id="growth">
+    <div class="container mx-auto">
+        <div class="container mx-auto md:flex  items-center">
+            <div class="text-white max-w-2xl mx-auto text-center">
+                <h2 class="text-2xl mb-5 text-theme-navy">ARE WE THE RIGHT FIT FOR YOU ?</h2>
+                <p class="text-slate-700 mb-5">Would you like to arrange a meeting to talk to us about your situation and objectives? During a 30-minute no commitment interview, we will study your particular needs and the best way to achieve the results you are pursuing.</p>
 
+                <a href="#" target="_blank" class="w-full sm:w-auto inline-flex justify-center items-center text-center bg-theme-navy hover:bg-slate-700 border border-transparent text-base md:text-lg text-white font-medium focus:ring-2 focus:ring-blue-600   transition py-3 px-5 tracking-wideflex-col">Contact Us </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="helpClients" class="relative bg-theme-navy overflow-hidden pt-10 md:pt-0 flex-col-reverse flex">
     <div class="container mx-auto flex">
         <div class="relative z-10 bg-theme-blue w-full lg:w-1/2">
             <div class="py-12 lg:py-16 max-w-xl mx-auto pl-0 lg:pl-10" data-gtm-vis-recent-on-screen-32410801_439="305" data-gtm-vis-first-on-screen-32410801_439="305" data-gtm-vis-total-visible-time-32410801_439="5000" data-gtm-vis-has-fired-32410801_439="1">
@@ -34,7 +48,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-full w-0 lg:w-1/2"></div>
+        <div class="w-0 lg:w-1/2"></div>
     </div>
     <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <img src="<?php echo get_template_directory_uri() ?>/assets/img/solutions.webp" alt="" class="h-56 w-full object-cover object-center-top sm:h-72 md:h-96 lg:w-full lg:h-full rounded-none hidden lg:block">
@@ -78,7 +92,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-full w-0 lg:w-1/2"></div>
+        <div class="w-0 lg:w-1/2"></div>
     </div>
     <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <img src="<?php echo get_template_directory_uri() ?>/assets/img/vision.webp" alt="" class="h-56 w-full object-cover object-center-top sm:h-72 md:h-96 lg:w-full lg:h-full rounded-none hidden lg:block">
@@ -158,5 +172,42 @@
 
     </div>
 </section>
+
+<section class="py-12 md:py-16 bg-gray-50" id="news">
+    <div class="">
+        <div class="md:flex  items-center">
+            <div class="text-white container mx-auto text-center">
+                <h2 class="block font-bold text-slate-800 text-3xl md:text-[2.35rem] leading-[1.2] mb-4">NEWS</h2>
+
+                <div class="max-w-screen-lg mx-auto flex flex-col md:flex-row space-y-4 space-x-0 md:space-x-4 md:space-y-0">
+
+                    <?php
+                    $the_query = new WP_Query('posts_per_page=3'); ?>
+                    <?php
+                    while ($the_query->have_posts()) : $the_query->the_post();
+                    ?>
+
+                        <div class="w-full md:w-1/3 ">
+                            <div class="newsBox relative">
+                                <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
+                                <?php echo '<div class="img-box w-full  h-40 md:h-48" style="background: url(' . $url . ')"></div>'; ?>
+                                <div class="text-box w-full bg-theme-navy py-4">
+                                    <h4 class="text-md"><?php the_title(); ?></h4>
+                                </div>
+                                <a href="<?php the_permalink() ?>" class="absolute h-full w-full bg-black bg-opacity-20 transition-all hover:bg-opacity-0 top-0 left-0"></a>
+                            </div>
+                        </div>
+
+                    <?php
+                    endwhile;
+                    wp_reset_postdata();
+                    ?>
+
+
+                </div>
+            </div>
+        </div>
+</section>
+
 
 <?php require 'footer.php'; ?>
