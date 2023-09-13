@@ -1,7 +1,9 @@
 <nav class=" bg-theme-navy p-6 py-3 sticky top-0 relative z-50">
     <div class="container mx-auto flex items-center justify-between flex-wrap">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/mindsetlogo--white.png" alt="" class="max-h-10 w-auto rounded-none flex place-self-center mx-auto">
+            <a href="/">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/mindsetlogo--white.png" alt="" class="max-h-10 w-auto rounded-none flex place-self-center mx-auto">
+            </a>
         </div>
         <div class="block md:hidden">
             <button class="flex items-center px-1 py-1 border rounded-sm text-white border-white hover:text-white hover:border-white" id="mobileButton">
@@ -12,22 +14,22 @@
         </div>
         <div class="w-full block flex-grow hidden md:flex lg:items-center lg:w-auto justify-end" id="mobileNav">
             <div>
-                <a href="#aboutUs" target="_blank" class="inline-block text-sm px-4 py-2 leading-none text-white border-b-2 border-theme-navy hover:border-slate-100 mt-4 lg:mt-0">About Us</a>
+                <a href="<?php echo site_url() ?>#aboutUs" class="inline-block text-sm px-4 py-2 leading-none text-white border-b-2 border-theme-navy hover:border-slate-100 mt-4 lg:mt-0">About Us</a>
             </div>
             <div>
-                <a href="#solutions" target="_blank" class="inline-block text-sm px-4 py-2 leading-none text-white border-b-2 border-theme-navy hover:border-slate-100 mt-4 lg:mt-0">Solutions</a>
+                <a href="<?php echo site_url() ?>#solutions" class="inline-block text-sm px-4 py-2 leading-none text-white border-b-2 border-theme-navy hover:border-slate-100 mt-4 lg:mt-0">Solutions</a>
             </div>
             <div>
-                <a href="#ourProcess" class="inline-block text-sm px-4 py-2 leading-none text-white border-b-2 border-theme-navy hover:border-slate-100 mt-4 lg:mt-0">Our Process</a>
+                <a href="<?php echo site_url() ?>#ourProcess" class="inline-block text-sm px-4 py-2 leading-none text-white border-b-2 border-theme-navy hover:border-slate-100 mt-4 lg:mt-0">Our Process</a>
             </div>
             <div>
-                <a href="#news" class="inline-block text-sm px-4 py-2 leading-none text-white border-b-2 border-theme-navy hover:border-slate-100 mt-4 lg:mt-0">News</a>
+                <a href="<?php echo site_url() ?>#news" class="inline-block text-sm px-4 py-2 leading-none text-white border-b-2 border-theme-navy hover:border-slate-100 mt-4 lg:mt-0">News</a>
             </div>
             <div>
-                <a href="#careers" class="inline-block text-sm px-4 py-2 leading-none text-white border-b-2 border-theme-navy hover:border-slate-100 mt-4 lg:mt-0">Careers</a>
+                <a href="<?php echo site_url() ?>#careers" class="inline-block text-sm px-4 py-2 leading-none text-white border-b-2 border-theme-navy hover:border-slate-100 mt-4 lg:mt-0">Careers</a>
             </div>
             <div>
-                <a href="#contactUs" class="inline-block text-sm px-4 py-2 leading-none text-white border-b-2 border-theme-navy hover:border-slate-100 mt-4 lg:mt-0">Contact</a>
+                <a href="<?php echo site_url() ?>#contactUs" class="inline-block text-sm px-4 py-2 leading-none text-white border-b-2 border-theme-navy hover:border-slate-100 mt-4 lg:mt-0">Contact</a>
             </div>
         </div>
     </div>
