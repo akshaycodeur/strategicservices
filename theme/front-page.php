@@ -140,7 +140,7 @@
 
             </div>
 
-            <h4 class="block font-bold text-slate-800 text-3xl md:text-[2.35rem] leading-[1.2] my-5 text-center">SELECTION OF SOLUTIONS</h4>
+            <h4 class="block font-bold text-slate-800 text-2xl md:text-[2rem] leading-[1.2] mt-10 my-5 text-center">Other bespoke solutions</h4>
 
             <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 responsive-grid mt-5">
 
