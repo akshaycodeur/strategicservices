@@ -114,28 +114,28 @@
                     <div class="absolute w-full bottom-0 left-0 py-4 bg-slate-900 bg-opacity-75">
                         <h4 class="text-white text-xl text-center">Digital Transformation</h4>
                     </div>
-                    <a href="#" class="absolute w-full h-full left-0 top-0"></a>
+                    <a href="<?php echo site_url() ?>/digital-transformation" class="absolute w-full h-full left-0 top-0"></a>
                 </div>
 
                 <div class="relative bg-white p-4 shadow-md w-full h-64 bg-cover" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/card2.webp) ;">
                     <div class="absolute w-full bottom-0 left-0 py-4 bg-slate-900 bg-opacity-75">
                         <h4 class="text-white text-xl text-center">Marketing</h4>
                     </div>
-                    <a href="#" class="absolute w-full h-full left-0 top-0"></a>
+                    <a href="<?php echo site_url() ?>/marketing" class="absolute w-full h-full left-0 top-0"></a>
                 </div>
 
                 <div class="relative bg-white p-4 shadow-md w-full h-64 bg-cover" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/card3.png) ;">
                     <div class="absolute w-full bottom-0 left-0 py-4 bg-slate-900 bg-opacity-75">
                         <h4 class="text-white text-xl text-center">Sales</h4>
                     </div>
-                    <a href="#" class="absolute w-full h-full left-0 top-0"></a>
+                    <a href="<?php echo site_url() ?>/sales" class="absolute w-full h-full left-0 top-0"></a>
                 </div>
 
                 <div class="relative bg-white p-4 shadow-md w-full h-64 bg-cover" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/card6.jpg) ;">
                     <div class="absolute w-full bottom-0 left-0 py-4 bg-slate-900 bg-opacity-75">
                         <h4 class="text-white text-xl text-center">Training</h4>
                     </div>
-                    <a href="#" class="absolute w-full h-full left-0 top-0"></a>
+                    <a href="<?php echo site_url() ?>/training" class="absolute w-full h-full left-0 top-0"></a>
                 </div>
 
             </div>
@@ -148,7 +148,7 @@
                     <div class="absolute w-full bottom-0 left-0 py-4 bg-slate-900 bg-opacity-75">
                         <h4 class="text-white text-xl text-center">Strategy</h4>
                     </div>
-                    <a href="#" class="absolute w-full h-full left-0 top-0"></a>
+                    <a href="<?php echo site_url() ?>/strategy" class="absolute w-full h-full left-0 top-0"></a>
                 </div>
 
 
@@ -156,20 +156,20 @@
                     <div class="absolute w-full bottom-0 left-0 py-4 bg-slate-900 bg-opacity-75">
                         <h4 class="text-white text-xl text-center">SME</h4>
                     </div>
-                    <a href="#" class="absolute w-full h-full left-0 top-0"></a>
+                    <a href="<?php echo site_url() ?>/sme" class="absolute w-full h-full left-0 top-0"></a>
                 </div>
                 <div class="relative bg-white p-4 shadow-md w-full h-64 bg-cover" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/card7.webp) ;">
                     <div class="absolute w-full bottom-0 left-0 py-4 bg-slate-900 bg-opacity-75">
                         <h4 class="text-white text-xl text-center">Human Resources</h4>
                     </div>
-                    <a href="#" class="absolute w-full h-full left-0 top-0"></a>
+                    <a href="<?php echo site_url() ?>/human-resources" class="absolute w-full h-full left-0 top-0"></a>
                 </div>
 
                 <div class="relative bg-white p-4 shadow-md w-full h-64 bg-cover" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/card8.jpg) ;">
                     <div class="absolute w-full bottom-0 left-0 py-4 bg-slate-900 bg-opacity-75">
                         <h4 class="text-white text-xl text-center">Live and work in Mauritius</h4>
                     </div>
-                    <a href="#" class="absolute w-full h-full left-0 top-0"></a>
+                    <a href="<?php echo site_url() ?>/live-and-work-in-mauritius" class="absolute w-full h-full left-0 top-0"></a>
                 </div>
 
             </div>
