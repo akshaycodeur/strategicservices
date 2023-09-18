@@ -13,8 +13,12 @@
             </button>
         </div>
         <div class="w-full block flex-grow hidden md:flex lg:items-center lg:w-auto justify-end" id="mobileNav">
-            <div>
+            <div class="dropdown relative">
                 <a href="<?php echo site_url() ?>#aboutUs" class="inline-block text-sm px-4 py-2 leading-none text-white border-b-2 border-theme-navy hover:border-slate-100 mt-4 lg:mt-0">About Us</a>
+                <div class="dropdown-items flex flex-col bg-white absolute min-w-max">
+                    <a href="<?php echo site_url() ?>#mission-vision" class="inline-block text-sm px-4 py-2 leading-none text-theme-navy border-b-2 border-theme-navy hover:border-slate-100 mt-4 lg:mt-0">Mission | Vision | Values</a>
+                    <a href="<?php echo site_url() ?>#mission-vision" class="inline-block text-sm px-4 py-2 leading-none text-theme-navy border-b-2 border-theme-navy hover:border-slate-100 mt-4 lg:mt-0">Pillar of Growth</a>
+                </div>
             </div>
             <div>
                 <a href="<?php echo site_url() ?>#solutions" class="inline-block text-sm px-4 py-2 leading-none text-white border-b-2 border-theme-navy hover:border-slate-100 mt-4 lg:mt-0">Solutions</a>
