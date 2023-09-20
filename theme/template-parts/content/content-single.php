@@ -17,7 +17,7 @@
 </style>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<header class="entry-header">
+	<header class="entry-header singlephp">
 		<div class="container text-right">
 			<?php if (!is_page()) : ?>
 				<div class="entry-meta">

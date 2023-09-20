@@ -12,7 +12,7 @@ get_header();
 ?>
 
 <section id="primary">
-	<main id="main" class="singlePost">
+	<main id="main" class="singlePost singlePosted">
 
 		<?php
 		/* Start the Loop */
