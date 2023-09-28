@@ -5,7 +5,7 @@
     }
 </style>
 <section id="hero" class="relative py-10 md:py-20 flex items-center justify-center h-[70vh] bg-no-repeat bg-cover text-center" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/human.jpg) ;">
-    <div class="centrally py-8 px-5 bg-slate-800 bg-opacity-80 max-w-3xl">
+    <div class="centrally py-8 px-5 bg-slate-800 bg-opacity-50 max-w-3xl">
         <h2 class="block font-bold text-white text-3xl md:text-[2.5rem] leading-[1.2] text-center">SUPPORT - PARTNERSIP - GROWTH</h2>
         <p class="text-xl mt-5 text-white">We help you put your customers at the center of your leadership, strategy, and operation.</p>
         <h2 class="text-2xl mt-5 font-black text-white">ARE WE THE RIGHT FIT FOR YOU ?</h2>
@@ -223,31 +223,34 @@
                 <h2 class="block font-bold text-slate-800 text-3xl md:text-[2.35rem] leading-[1.2] mb-4">Contact</h2>
 
                 <div class="max-screen-w-lg mx-auto flex flex-col md:flex-row">
-                    <div class="w-full md:w-1/2">
+                    <div class="w-full md:w-1/2 mx-auto">
                         <div class=" dark:bg-gray-900">
                             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                                 <form action="#" class="space-y-8">
+                                    <div class="flex flex-col  md:flex-row space-x-0 md:space-x-4 w-full">
+                                        <div class="w-full">
+                                            <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text-left">First Name</label>
+                                            <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-white rounded-sm border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light w-full" placeholder="First Name" required>
+                                        </div>
+                                        <div class="w-full">
+                                            <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text-left">Last Name</label>
+                                            <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-white rounded-sm border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light w-full" placeholder="Last Name" required>
+                                        </div>
+                                    </div>
                                     <div>
                                         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text-left">Your email</label>
-                                        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="email" required>
+                                        <input type="email" id="email" class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="email" required>
                                     </div>
-                                    <div>
-                                        <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text-left">Subject</label>
-                                        <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
-                                    </div>
+
                                     <div class="sm:col-span-2">
                                         <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 text-left">Your message</label>
-                                        <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a message..."></textarea>
+                                        <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded-sm shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a message..."></textarea>
                                     </div>
                                     <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
                                 </form>
                                 <a href="#" class="w-full sm:w-auto inline-flex justify-start items-center text-center bg-theme-navy hover:bg-slate-700 border border-transparent text-base md:text-lg text-white font-medium focus:ring-2 focus:ring-blue-600   transition py-3 px-5 tracking-wideflex-col" style="float: left; margin-top: -2rem;">Submit </a>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="w-full md:w-1/2">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7497.47762342687!2d57.55512533789578!3d-20.01947394121725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217dab60f429fd2d%3A0xb0b223a04ab71772!2sChoisy%20Les%20Bains!5e0!3m2!1sen!2sca!4v1694574804284!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
                 </div>
