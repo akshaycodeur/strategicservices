@@ -9,20 +9,7 @@ get_header();
         <div class="max-w-screen-xl mx-auto">
             <div class="flex">
                 <div class="w-full">
-                    <p>As a forward-thinking organisation committed to innovation and excellence, we are
-                        continuously re-evaluating our organisational structures and manpower needs to align with
-                        our strategic objectives. This ongoing process of refinement and expansion invariably leads
-                        to a career opportunity across various verticals. We are proud to be an Equal Opportunities
-                        Employer, committed to fostering a diverse and inclusive work environment where every
-                        individual is valued irrespective of their age, gender, ethnicity, sexual orientation, religion,
-                        or disability. We welcome applications from candidates at different career stages—be it
-                        interns, recent graduates, or seasoned professionals. Our doors are open to talent from
-                        diverse disciplines including, but not limited to, Sales, Marketing, Human Resource
-                        Management, Business Development, and Information Technology. All available vacancies
-                        are diligently posted on our official website and actively promoted across our social media
-                        platforms. For those who wish to proactively engage with us, we are pleased to accept
-                        spontaneous applications. Please direct such inquiries to contact@mindsetstrategic.com.
-                        We invite you to be a part of our journey towards shaping the future.</p>
+                    <p>As a forward-thinking organisation committed to innovation and excellence, we are continuously re-evaluating our organisational structures and manpower needs to align with our strategic objectives. This ongoing process of refinement and expansion invariably leads to a career opportunity across various verticals. We are proud to be an Equal Opportunities Employer, committed to fostering a diverse and inclusive work environment where every individual is valued irrespective of their age, gender, ethnicity, sexual orientation, religion, or disability. We welcome applications from candidates at different career stages—be it interns, recent graduates, or seasoned professionals. Our doors are open to talent from diverse disciplines including, but not limited to, Sales, Marketing, Human Resource Management, Business Development, and Information Technology. All available vacancies are diligently posted on our official website and actively promoted across our social media platforms. For those who wish to proactively engage with us, we are pleased to accept spontaneous applications. Please direct such inquiries to contact@mindsetstrategic.com. We invite you to be a part of our journey towards shaping the future.</p>
                 </div>
 
             </div>
